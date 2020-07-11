@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Movil Version -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+    <!--fontawesome icons -->
+    <script src="https://kit.fontawesome.com/4ed7b1c2da.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EdgeLedger Financial | Accounting & Investment</title>
+</head>
+
+<body id="home">
+    <!-- Navbar -->
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary">
+                <i class="fas fa-book-open"></i>Edge</span>Ledger
+        </h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Header Showcase-->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="large-heading">
+                The Sky Is The Limit
+            </h1>
+            <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum modi eum rerum tenetur deserunt labore.
+            </p>
+            <a href="#what" class="btn">Read More</a>
+        </div>
+    </header>
+    <!-- Section: What We Do-->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center py-1"><span class="text-primary">What </span>We Do</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h3>Investment Bnking</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h3>Portfolio Management</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div>
+                        <h3>Tax And Custodial</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellendus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section: Who We Are-->
+    <section id="who">
+        <div class="who-img"></div>
+        <div class="who-text bg-dark p-2">
+            <h2 class="m-heading">
+                <span class="text-primary">Who</span> We are
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta accusantium dolor ipsum unde odio doloremque illum optio nisi aperiam cumque sit possimus, pariatur corporis excepturi culpa voluptate quidem porro!</p>
+            <h3>Our tem</h3>
+            <ul class="list">
+                <li>Mark Smith: CEO</li>
+                <li>Shannon Johnson: CFO</li>
+                <li>John Corbit: Lead Accountant</li>
+                <li>Janet Williams: Investment Manager</li>
+                <li>Kara Jackson: Senior Accountant</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Section: Clients-->
+    <section id="clients" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center py-1">
+                <span class="text-primary">Our</span> Clients
+            </h2>
+            <div class="items py-1">
+                <div><img src="./img/logo1.png" alt="client"></div>
+                <div><img src="./img/logo2.png" alt="client"></div>
+                <div><img src="./img/logo3.png" alt="client"></div>
+                <div><img src="./img/logo4.png" alt="client"></div>
+                <div><img src="./img/logo5.png" alt="client"></div>
+            </div>
+        </div>
+    </section>
+    <!--Section: Contact-->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>Please use the form below to contact us</p>
+            <!-- 
+                /* to use the php file please upload this theme to a hosting */
+                action="process.php" method="POST" 
+            -->
+            <form action="process.php" method="POST" data-netlify="true">
+                <!--Name-->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <!--Phone-->
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Phone">
+                </div>
+                <!--Message-->
+                <div class="form-group">
+                    <label for="phone">Message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Enter Message">
+
+                    </textarea>
+                </div>
+                <!--Button Submit-->
+                <input type="submit" value="Send" class="btn btn-dark">
+            </form>
+        </div>
+        <!--Google Maps-->
+        <div class="map">
+            <script src="./js/main.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPRfq7F1CuA3bLFP7xTGj3694WT_GxD8w&callback=initMap" async defer></script>
+        </div>
+    </section>
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Javascript File-->
+    <script src="./js/main.js"></script>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>Copyright &copy; 2019, James D. Pérez</p>
+    </footer>
+</body>
+
+</html>
